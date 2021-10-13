@@ -3,7 +3,7 @@ pipeline {
     agent any
     
     stages {
-              stage('Dependency check') {
+                    stage('Dependency check') {
           steps {
               sh "mvn --batch-mode dependency-check:check"
           }
@@ -20,7 +20,6 @@ pipeline {
               }
           }
       }
-             
          
         stage('Build') {
             steps {
